@@ -7,5 +7,3 @@ sudo apt-get install vlc
 sudo apt-get install python-dev
 sudo apt-get install python-pip
 sudo pip install flask
-
-sudo apt-get install python-flask
