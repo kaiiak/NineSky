@@ -1,0 +1,14 @@
+#-*-coding:UTF-8-*-
+import RPi.GPIO as GPIO
+import time
+
+LED = 4 
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(LED, GPIO.OUT)
+while 1:
+	GPIO.output(LED, False)
+	#延时1s
+	time.sleep(1)
+	GPIO.output(LED, True)
+	time.sleep(1)
