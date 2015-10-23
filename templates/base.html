@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+	<head>
+    	<meta charset="utf-8">
+		    <title>vpsee.com static blog</title>
+	</head>
+
+	<body>
+		<h1><a href="{{ url_for("index") }}">vpsee.com blog</a></h1>
+		{% block content %}
+		{% endblock content %}
+	</body>
+</html>
