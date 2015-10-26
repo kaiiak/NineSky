@@ -37,3 +37,7 @@ sudo easy_install -U RPIO
 ```shell
 sudo apt-get install lirc
 ```
+加载lir_rpi内核模块
+```shell
+sudo modprobe lirc_rpi gpio_in_pin=4 gpio_out_pin=5
+```
