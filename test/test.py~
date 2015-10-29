@@ -1,0 +1,4 @@
+i = True
+print i
+i = i + 1.0001
+print i
