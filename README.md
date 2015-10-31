@@ -37,7 +37,18 @@ sudo easy_install -U RPIO
 ```shell
 sudo apt-get install lirc
 ```
+配置树莓派的lirc，需要在`/boot/config.txt`中添加
+```
+dtoverlay=lirc-rpi,gpio_out_pin=24,gpio_in_pin=23
+```
+配置这个时，从别的博客都不靠谱，不过最终我在[这里](https://github.com/raspberrypi/firmware/blob/master/boot/overlays/README)，找到了官方给的方法，lirc默认的输出引脚是GPIO17，默认的输入引脚是GPIO13，不过可以在`config.txt`中自己更改，然后重启就可以了。
+
 加载lir_rpi内核模块
 ```shell
-sudo modprobe lirc_rpi gpio_in_pin=4 gpio_out_pin=5
+sudo modprobe lirc_rpi
 ```
+测试
+```shell
+sudo mode2 -d /dev/lirc0
+```
+现在就会看到一大串space和pulse交替产生。
