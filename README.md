@@ -78,5 +78,4 @@ MODULES="lirc_rpi"
 # Default configuration files for your hardware if any
 LIRCD_CONF=""
 LIRCMD_CONF=""
-
 ```
