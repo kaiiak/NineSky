@@ -13,5 +13,3 @@ sudo apt-get install python-flask
 
 sudo apt-get install python-setuptools
 sudo easy_install -U RPIO
-
-sudo apt-get install python-pylirc
