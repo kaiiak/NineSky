@@ -3,18 +3,20 @@
 import RPi.GPIO as GPIO
 import time
 
-LED = 4 
+class rpiGpio
+	LED = 4 
+	status = Flase
 
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(LED, GPIO.OUT)
+	def __init__()
+		GPIO.setmode(GPIO.BCM)
+		GPIO.setup(LED, GPIO.OUT)
 
-print("结束程序，请按CTRL+C")
-try:
-	while 1:
-		GPIO.output(LED, False)
-		#延时1s
-		time.sleep(1)
-		GPIO.output(LED, True)
-		time.sleep(1)
-except KeyboardInterrupt: # 如果程序被CTRL+C结束
-	GPIO.cleanup()
+	def gpioStop()
+		GPIO.cleanup()
+
+	def setLed()
+		GPIO.output(LED, status)
+		status = not status
+
+	def readStatus()
+		return status
