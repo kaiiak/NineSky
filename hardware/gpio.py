@@ -5,7 +5,7 @@ import time
 
 class rpiGpio
 	LED = 4 
-	status = Flase
+	status = True
 
 	def __init__()
 		GPIO.setmode(GPIO.BCM)
