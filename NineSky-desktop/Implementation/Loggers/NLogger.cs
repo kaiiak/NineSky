@@ -15,6 +15,7 @@
 // ========================================================================
 
 using Declarations;
+using NLog;
 
 namespace Implementation
 {

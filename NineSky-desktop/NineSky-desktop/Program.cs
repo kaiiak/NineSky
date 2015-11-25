@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace nVLC_Demo_MemoryInputOutput
+namespace NineSkydesktop
 {
     static class Program
     {

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NineSky-desktop", "NineSky-desktop\NineSky-desktop.csproj", "{B56A6E7E-AD73-41DF-B952-97406792A079}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nVLC.Implementation", "Implementation\nVLC.Implementation.csproj", "{6BA02CCA-2E14-4A64-8AB6-594E600D80C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NineSky-desktop", "NineSky-desktop\NineSky-desktop.csproj", "{3A14A585-D350-4D1D-A9BA-647A73661870}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nVLC.Declarations", "Declarations\nVLC.Declarations.csproj", "{819C4BAB-8FD0-463F-BB5F-119731840390}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nVLC.Implementation", "Implementation\nVLC.Implementation.csproj", "{6BA02CCA-2E14-4A64-8AB6-594E600D80C9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nVLC.LibVlcWrapper", "LibVlcWrapper\nVLC.LibVlcWrapper.csproj", "{57F08087-B175-4C96-BE36-83FBC4A21065}"
 EndProject
@@ -19,20 +19,12 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B56A6E7E-AD73-41DF-B952-97406792A079}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{B56A6E7E-AD73-41DF-B952-97406792A079}.Debug|x86.ActiveCfg = Debug|x86
-		{B56A6E7E-AD73-41DF-B952-97406792A079}.Debug|x86.Build.0 = Debug|x86
-		{B56A6E7E-AD73-41DF-B952-97406792A079}.Release|Any CPU.ActiveCfg = Release|x86
-		{B56A6E7E-AD73-41DF-B952-97406792A079}.Release|x86.ActiveCfg = Release|x86
-		{B56A6E7E-AD73-41DF-B952-97406792A079}.Release|x86.Build.0 = Release|x86
-		{6BA02CCA-2E14-4A64-8AB6-594E600D80C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6BA02CCA-2E14-4A64-8AB6-594E600D80C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6BA02CCA-2E14-4A64-8AB6-594E600D80C9}.Debug|x86.ActiveCfg = Debug|x86
-		{6BA02CCA-2E14-4A64-8AB6-594E600D80C9}.Debug|x86.Build.0 = Debug|x86
-		{6BA02CCA-2E14-4A64-8AB6-594E600D80C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6BA02CCA-2E14-4A64-8AB6-594E600D80C9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6BA02CCA-2E14-4A64-8AB6-594E600D80C9}.Release|x86.ActiveCfg = Release|x86
-		{6BA02CCA-2E14-4A64-8AB6-594E600D80C9}.Release|x86.Build.0 = Release|x86
+		{3A14A585-D350-4D1D-A9BA-647A73661870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A14A585-D350-4D1D-A9BA-647A73661870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A14A585-D350-4D1D-A9BA-647A73661870}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3A14A585-D350-4D1D-A9BA-647A73661870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A14A585-D350-4D1D-A9BA-647A73661870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A14A585-D350-4D1D-A9BA-647A73661870}.Release|x86.ActiveCfg = Release|Any CPU
 		{819C4BAB-8FD0-463F-BB5F-119731840390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{819C4BAB-8FD0-463F-BB5F-119731840390}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{819C4BAB-8FD0-463F-BB5F-119731840390}.Debug|x86.ActiveCfg = Debug|x86
@@ -41,6 +33,14 @@ Global
 		{819C4BAB-8FD0-463F-BB5F-119731840390}.Release|Any CPU.Build.0 = Release|Any CPU
 		{819C4BAB-8FD0-463F-BB5F-119731840390}.Release|x86.ActiveCfg = Release|x86
 		{819C4BAB-8FD0-463F-BB5F-119731840390}.Release|x86.Build.0 = Release|x86
+		{6BA02CCA-2E14-4A64-8AB6-594E600D80C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BA02CCA-2E14-4A64-8AB6-594E600D80C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BA02CCA-2E14-4A64-8AB6-594E600D80C9}.Debug|x86.ActiveCfg = Debug|x86
+		{6BA02CCA-2E14-4A64-8AB6-594E600D80C9}.Debug|x86.Build.0 = Debug|x86
+		{6BA02CCA-2E14-4A64-8AB6-594E600D80C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BA02CCA-2E14-4A64-8AB6-594E600D80C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BA02CCA-2E14-4A64-8AB6-594E600D80C9}.Release|x86.ActiveCfg = Release|x86
+		{6BA02CCA-2E14-4A64-8AB6-594E600D80C9}.Release|x86.Build.0 = Release|x86
 		{57F08087-B175-4C96-BE36-83FBC4A21065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{57F08087-B175-4C96-BE36-83FBC4A21065}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57F08087-B175-4C96-BE36-83FBC4A21065}.Debug|x86.ActiveCfg = Debug|x86
@@ -52,5 +52,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
 	EndGlobalSection
 EndGlobal

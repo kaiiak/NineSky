@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("nVLC")]
-[assembly: AssemblyCopyright("Copyright © Roman Ginzburg 2010")]
+[assembly: AssemblyCopyright("Copyright")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

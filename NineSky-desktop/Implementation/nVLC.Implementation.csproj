@@ -28,7 +28,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DocumentationFile>bin\Debug\nVLC.Implementation.xml</DocumentationFile>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -59,8 +60,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NLog, Version=1.0.0.505, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="NLog">
       <HintPath>..\3rd party\NLog.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -86,6 +86,7 @@
     <Compile Include="Exceptions\LibVlcRemovedModuleException.cs" />
     <Compile Include="Filters\AdjustFilter.cs" />
     <Compile Include="Loggers\LogSubscriber.cs" />
+    <Compile Include="Loggers\NLog.cs" />
     <Compile Include="MediaLibrary\MediaLibrary.cs" />
     <Compile Include="Media\CompositeMemoryInputMedia.cs" />
     <Compile Include="Media\MediaFromFile.cs" />
@@ -138,6 +139,9 @@
       <Project>{57F08087-B175-4C96-BE36-83FBC4A21065}</Project>
       <Name>nVLC.LibVlcWrapper</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

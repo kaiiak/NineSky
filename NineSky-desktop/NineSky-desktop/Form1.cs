@@ -6,7 +6,7 @@ using Declarations.Media;
 using Declarations.Players;
 using Implementation;
 
-namespace nVLC_Demo_MemoryInputOutput
+namespace NineSky_desktop
 {
     public partial class Form1 : Form
     {
