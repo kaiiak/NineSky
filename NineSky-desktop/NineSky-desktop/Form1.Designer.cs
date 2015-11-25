@@ -1,4 +1,4 @@
-﻿namespace nVLC_Demo_MemoryInputOutput
+﻿namespace NineSky_desktop
 {
     partial class Form1
     {
