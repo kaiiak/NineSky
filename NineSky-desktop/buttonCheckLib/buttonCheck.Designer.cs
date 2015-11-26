@@ -28,8 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // buttonCheck
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Name = "buttonCheck";
+            this.Click += new System.EventHandler(this.buttonCheck_Click);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

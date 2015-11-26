@@ -34,13 +34,17 @@
             this.buttonCheck2 = new buttonCheckLib.buttonCheck();
             this.buttonCheck3 = new buttonCheckLib.buttonCheck();
             this.buttonCheck4 = new buttonCheckLib.buttonCheck();
+            this.switch1 = new System.Windows.Forms.Label();
+            this.switch2 = new System.Windows.Forms.Label();
+            this.switch3 = new System.Windows.Forms.Label();
+            this.switch4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonCheck1
             // 
             this.buttonCheck1.BackColor = System.Drawing.Color.Transparent;
             this.buttonCheck1.Checked = false;
-            this.buttonCheck1.Location = new System.Drawing.Point(301, 262);
+            this.buttonCheck1.Location = new System.Drawing.Point(12, 278);
             this.buttonCheck1.Name = "buttonCheck1";
             this.buttonCheck1.Size = new System.Drawing.Size(85, 35);
             this.buttonCheck1.TabIndex = 0;
@@ -49,7 +53,7 @@
             // 
             this.buttonCheck2.BackColor = System.Drawing.Color.Transparent;
             this.buttonCheck2.Checked = false;
-            this.buttonCheck2.Location = new System.Drawing.Point(442, 262);
+            this.buttonCheck2.Location = new System.Drawing.Point(342, 278);
             this.buttonCheck2.Name = "buttonCheck2";
             this.buttonCheck2.Size = new System.Drawing.Size(85, 35);
             this.buttonCheck2.TabIndex = 1;
@@ -58,7 +62,7 @@
             // 
             this.buttonCheck3.BackColor = System.Drawing.Color.Transparent;
             this.buttonCheck3.Checked = false;
-            this.buttonCheck3.Location = new System.Drawing.Point(301, 332);
+            this.buttonCheck3.Location = new System.Drawing.Point(166, 278);
             this.buttonCheck3.Name = "buttonCheck3";
             this.buttonCheck3.Size = new System.Drawing.Size(85, 35);
             this.buttonCheck3.TabIndex = 2;
@@ -67,16 +71,56 @@
             // 
             this.buttonCheck4.BackColor = System.Drawing.Color.Transparent;
             this.buttonCheck4.Checked = false;
-            this.buttonCheck4.Location = new System.Drawing.Point(442, 332);
+            this.buttonCheck4.Location = new System.Drawing.Point(510, 278);
             this.buttonCheck4.Name = "buttonCheck4";
             this.buttonCheck4.Size = new System.Drawing.Size(85, 35);
             this.buttonCheck4.TabIndex = 3;
+            // 
+            // switch1
+            // 
+            this.switch1.AutoSize = true;
+            this.switch1.Location = new System.Drawing.Point(10, 263);
+            this.switch1.Name = "switch1";
+            this.switch1.Size = new System.Drawing.Size(35, 12);
+            this.switch1.TabIndex = 4;
+            this.switch1.Text = "开关1";
+            // 
+            // switch2
+            // 
+            this.switch2.AutoSize = true;
+            this.switch2.Location = new System.Drawing.Point(166, 260);
+            this.switch2.Name = "switch2";
+            this.switch2.Size = new System.Drawing.Size(35, 12);
+            this.switch2.TabIndex = 5;
+            this.switch2.Text = "开关2";
+            // 
+            // switch3
+            // 
+            this.switch3.AutoSize = true;
+            this.switch3.Location = new System.Drawing.Point(342, 263);
+            this.switch3.Name = "switch3";
+            this.switch3.Size = new System.Drawing.Size(35, 12);
+            this.switch3.TabIndex = 6;
+            this.switch3.Text = "开关3";
+            // 
+            // switch4
+            // 
+            this.switch4.AutoSize = true;
+            this.switch4.Location = new System.Drawing.Point(510, 263);
+            this.switch4.Name = "switch4";
+            this.switch4.Size = new System.Drawing.Size(35, 12);
+            this.switch4.TabIndex = 7;
+            this.switch4.Text = "开关4";
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(607, 379);
+            this.Controls.Add(this.switch4);
+            this.Controls.Add(this.switch3);
+            this.Controls.Add(this.switch2);
+            this.Controls.Add(this.switch1);
             this.Controls.Add(this.buttonCheck4);
             this.Controls.Add(this.buttonCheck3);
             this.Controls.Add(this.buttonCheck2);
@@ -87,6 +131,7 @@
             this.Name = "mainForm";
             this.Text = "九天智能家居";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -98,5 +143,9 @@
         private buttonCheckLib.buttonCheck buttonCheck2;
         private buttonCheckLib.buttonCheck buttonCheck3;
         private buttonCheckLib.buttonCheck buttonCheck4;
+        private System.Windows.Forms.Label switch1;
+        private System.Windows.Forms.Label switch2;
+        private System.Windows.Forms.Label switch3;
+        private System.Windows.Forms.Label switch4;
     }
 }
