@@ -7,16 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using NineSky_desktop;
 
-namespace buttonCheck
+namespace buttonCheckLib
 {
     public partial class buttonCheck : UserControl
     {
         public buttonCheck()
         {
             InitializeComponent();
-
             //设置Style支持透明背景色并且双缓冲
             this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
             this.SetStyle(ControlStyles.DoubleBuffer, true);
@@ -41,9 +39,9 @@ namespace buttonCheck
             Bitmap bitMapOn = null;
             Bitmap bitMapOff = null;
 
-           
-            bitMapOn = global::NineSky_desktop.Properties.Resources.open;
-            bitMapOff = global::NineSky_desktop.Properties.Resources.close;
+
+            bitMapOn = global::buttonCheckLib.Properties.Resources.open;
+            bitMapOff = global::buttonCheckLib.Properties.Resources.close;
 
 
             Graphics g = e.Graphics;

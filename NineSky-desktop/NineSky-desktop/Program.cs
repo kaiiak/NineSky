@@ -16,7 +16,8 @@ namespace NineSkydesktop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Monitor());
+            //Application.Run(new Monitor());
+            Application.Run(new mainForm());
         }
     }
 }

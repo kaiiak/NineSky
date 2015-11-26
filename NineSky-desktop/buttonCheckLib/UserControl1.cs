@@ -1,19 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using buttonCheckLib;
 
-namespace NineSky_desktop
+namespace buttonCheckLib
 {
-    public partial class mainForm : Form
+    public partial class UserControl1: UserControl
     {
-        public mainForm()
+        public UserControl1()
         {
             InitializeComponent();
         }
