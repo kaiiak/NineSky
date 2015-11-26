@@ -1,6 +1,6 @@
 ﻿namespace NineSky_desktop
 {
-    partial class Form1
+    partial class Monitor
     {
         /// <summary>
         /// Required designer variable.
@@ -48,18 +48,21 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(642, 525);
+            this.panel1.Size = new System.Drawing.Size(1110, 525);
             this.panel1.TabIndex = 1;
             // 
-            // Form1
+            // Monitor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 563);
+            this.ClientSize = new System.Drawing.Size(1110, 563);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Monitor";
+            this.Text = "家庭监视器";
             this.ResumeLayout(false);
 
         }

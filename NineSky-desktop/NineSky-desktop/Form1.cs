@@ -8,7 +8,7 @@ using Implementation;
 
 namespace NineSky_desktop
 {
-    public partial class Form1 : Form
+    public partial class Monitor : Form
     {
         IMediaPlayerFactory m_factory;
         IVideoPlayer m_sourcePlayer;
@@ -21,7 +21,7 @@ namespace NineSky_desktop
         const int DefaultFps = 24;
         Timer timer = new Timer();
 
-        public Form1()
+        public Monitor()
         {
             InitializeComponent();
             timer.Tick += new EventHandler(timer_Tick);
