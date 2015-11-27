@@ -17,10 +17,5 @@ namespace NineSky_desktop
         {
             InitializeComponent();
         }
-
-        private void buttonCheck2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
