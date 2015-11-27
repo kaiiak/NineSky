@@ -36,7 +36,8 @@
             this.switch2 = new System.Windows.Forms.Label();
             this.switch3 = new System.Windows.Forms.Label();
             this.switch4 = new System.Windows.Forms.Label();
-            this.setting = new System.Windows.Forms.Button();
+            this.settingBtn = new System.Windows.Forms.Button();
+            this.startMonitor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonCheck1
@@ -115,21 +116,33 @@
             this.switch4.TabIndex = 7;
             this.switch4.Text = "开关4";
             // 
-            // setting
+            // settingBtn
             // 
-            this.setting.Location = new System.Drawing.Point(434, 329);
-            this.setting.Name = "setting";
-            this.setting.Size = new System.Drawing.Size(75, 23);
-            this.setting.TabIndex = 8;
-            this.setting.Text = "设置";
-            this.setting.UseVisualStyleBackColor = true;
+            this.settingBtn.Location = new System.Drawing.Point(434, 329);
+            this.settingBtn.Name = "settingBtn";
+            this.settingBtn.Size = new System.Drawing.Size(75, 23);
+            this.settingBtn.TabIndex = 8;
+            this.settingBtn.Text = "设置";
+            this.settingBtn.UseVisualStyleBackColor = true;
+            this.settingBtn.Click += new System.EventHandler(this.setting_Click);
+            // 
+            // startMonitor
+            // 
+            this.startMonitor.Location = new System.Drawing.Point(208, 329);
+            this.startMonitor.Name = "startMonitor";
+            this.startMonitor.Size = new System.Drawing.Size(75, 23);
+            this.startMonitor.TabIndex = 9;
+            this.startMonitor.Text = "开始监控";
+            this.startMonitor.UseVisualStyleBackColor = true;
+            this.startMonitor.Click += new System.EventHandler(this.startMonitor_Click);
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(607, 379);
-            this.Controls.Add(this.setting);
+            this.Controls.Add(this.startMonitor);
+            this.Controls.Add(this.settingBtn);
             this.Controls.Add(this.switch4);
             this.Controls.Add(this.switch3);
             this.Controls.Add(this.switch2);
@@ -158,6 +171,7 @@
         private System.Windows.Forms.Label switch2;
         private System.Windows.Forms.Label switch3;
         private System.Windows.Forms.Label switch4;
-        private System.Windows.Forms.Button setting;
+        private System.Windows.Forms.Button settingBtn;
+        private System.Windows.Forms.Button startMonitor;
     }
 }

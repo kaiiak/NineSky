@@ -114,7 +114,12 @@ namespace NineSky_desktop
             //{
             //    OpenSourceMedia(ofd.FileName);
             //}
-            OpenSourceMedia("http://192.168.2.108:8090");
+            OpenSourceMedia("http://"+config.Default.netAdress+':'+config.Default.netPort);
+        }
+
+        private void MonitorClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -17,5 +17,17 @@ namespace NineSky_desktop
         {
             InitializeComponent();
         }
+
+        private void setting_Click(object sender, EventArgs e)
+        {//打开新窗体
+            setting newform = new setting();
+            newform.Show(); 
+        }
+
+        private void startMonitor_Click(object sender, EventArgs e)
+        {
+            Monitor newMon = new Monitor();
+            newMon.Show();
+        }
     }
 }
