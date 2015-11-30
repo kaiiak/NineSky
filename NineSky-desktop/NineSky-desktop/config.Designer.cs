@@ -25,7 +25,7 @@ namespace NineSky_desktop {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("192.168.2.108:8090")]
+        [global::System.Configuration.DefaultSettingValueAttribute("192.168.2.108")]
         public string netAdress {
             get {
                 return ((string)(this["netAdress"]));

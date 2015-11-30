@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="netAdress" Type="System.String" Scope="User">
-      <Value Profile="(Default)">192.168.2.108:8090</Value>
+      <Value Profile="(Default)">192.168.2.108</Value>
     </Setting>
     <Setting Name="netPort" Type="System.String" Scope="User">
       <Value Profile="(Default)">8090</Value>
