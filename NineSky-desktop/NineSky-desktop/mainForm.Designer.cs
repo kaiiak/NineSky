@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.LineAnnotation lineAnnotation1 = new System.Windows.Forms.DataVisualization.Charting.LineAnnotation();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.buttonCheck1 = new buttonCheckLib.buttonCheck();
             this.buttonCheck2 = new buttonCheckLib.buttonCheck();
             this.buttonCheck3 = new buttonCheckLib.buttonCheck();
@@ -169,7 +171,7 @@
             // showCpuTem
             // 
             this.showCpuTem.AutoSize = true;
-            this.showCpuTem.BackColor = System.Drawing.Color.LawnGreen;
+            this.showCpuTem.BackColor = System.Drawing.Color.ForestGreen;
             this.showCpuTem.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.showCpuTem.Location = new System.Drawing.Point(198, 340);
             this.showCpuTem.Name = "showCpuTem";
@@ -180,7 +182,7 @@
             // showGpuTem
             // 
             this.showGpuTem.AutoSize = true;
-            this.showGpuTem.BackColor = System.Drawing.Color.LawnGreen;
+            this.showGpuTem.BackColor = System.Drawing.Color.ForestGreen;
             this.showGpuTem.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.showGpuTem.Location = new System.Drawing.Point(425, 340);
             this.showGpuTem.Name = "showGpuTem";
@@ -190,20 +192,31 @@
             // 
             // memUse
             // 
-            chartArea1.Name = "ChartArea1";
+            lineAnnotation1.AnchorOffsetY = -2.5D;
+            lineAnnotation1.Height = -5D;
+            lineAnnotation1.Name = "LineAnnotation1";
+            lineAnnotation1.Width = 0D;
+            this.memUse.Annotations.Add(lineAnnotation1);
+            chartArea1.Name = "memChat";
             this.memUse.ChartAreas.Add(chartArea1);
+            legend1.DockedToChartArea = "memChat";
+            legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left;
             legend1.Name = "Legend1";
             this.memUse.Legends.Add(legend1);
-            this.memUse.Location = new System.Drawing.Point(12, 12);
+            this.memUse.Location = new System.Drawing.Point(13, 13);
             this.memUse.Name = "memUse";
-            this.memUse.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series1.ChartArea = "ChartArea1";
+            this.memUse.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series1.ChartArea = "memChat";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.Name = "内存";
             this.memUse.Series.Add(series1);
             this.memUse.Size = new System.Drawing.Size(300, 300);
             this.memUse.TabIndex = 14;
-            this.memUse.Text = "memUse";
+            this.memUse.Text = "内存使用量";
+            title1.Name = "Title1";
+            title1.Text = "内存使用量";
+            this.memUse.Titles.Add(title1);
             // 
             // mainForm
             // 

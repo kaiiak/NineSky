@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using buttonCheckLib;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace NineSky_desktop
 {
@@ -19,7 +20,7 @@ namespace NineSky_desktop
         }
 
         private void setting_Click(object sender, EventArgs e)
-        {//打开新窗体
+        {   //打开新窗体
             setting newform = new setting();
             newform.Show(); 
         }
