@@ -46,5 +46,17 @@ namespace NineSky_desktop {
                 this["netPort"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("9999")]
+        public string controlPort {
+            get {
+                return ((string)(this["controlPort"]));
+            }
+            set {
+                this["controlPort"] = value;
+            }
+        }
     }
 }

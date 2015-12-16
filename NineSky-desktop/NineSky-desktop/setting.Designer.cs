@@ -34,6 +34,8 @@
             this.setExit = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.netPort = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.controlPort = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -75,11 +77,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(66, 83);
+            this.label2.Location = new System.Drawing.Point(54, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 12);
+            this.label2.Size = new System.Drawing.Size(65, 12);
             this.label2.TabIndex = 4;
-            this.label2.Text = "端口号：";
+            this.label2.Text = "监控端口：";
             // 
             // netPort
             // 
@@ -88,11 +90,29 @@
             this.netPort.Size = new System.Drawing.Size(100, 21);
             this.netPort.TabIndex = 5;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(54, 118);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 12);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "控制端口：";
+            // 
+            // controlPort
+            // 
+            this.controlPort.Location = new System.Drawing.Point(125, 115);
+            this.controlPort.Name = "controlPort";
+            this.controlPort.Size = new System.Drawing.Size(100, 21);
+            this.controlPort.TabIndex = 7;
+            // 
             // setting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(459, 262);
+            this.Controls.Add(this.controlPort);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.netPort);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.setExit);
@@ -116,5 +136,7 @@
         private System.Windows.Forms.Button setExit;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox netPort;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox controlPort;
     }
 }
