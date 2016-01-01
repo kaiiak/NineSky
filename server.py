@@ -1,14 +1,66 @@
 #-*-coding:UTF8-*-
 #!/usr/bin/env python
 
-#用Flask库来实现一个简单的web server
+import socket   #for sockets
+import sys  #for exit
 
-from flask import Flask, url_for
-app = Flask(name)
+host = '192.168.2.108'
+port = 80
 
-@app.route("/")
-def hello():
-	return  "Hello World!"
+def __init__()
+	HOST = ''   # Symbolic name meaning all available interfaces
+	PORT = 9999 # Arbitrary non-privileged port
+	 
+	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	print 'Socket created'
 
-if __name___ == "__main__":
-	app.run()
+	s.listen(10)
+	print 'Socket now listening'
+	 
+	try:
+	    s.bind((HOST, PORT))
+	except socket.error , msg:
+	    print 'Bind failed. Error Code : ' + str(msg[0]) + ' Message ' + msg[1]
+	    sys.exit()
+	     
+	print 'Socket bind complete'
+
+	#wait to accept a connection - blocking call
+	conn, addr = s.accept()
+	 
+	#display client information
+	print 'Connected with ' + addr[0] + ':' + str(addr[1])
+
+def sendMessage(message):
+	
+	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	print 'Socket created'
+	 
+	try:
+	    s.bind((HOST, PORT))
+	except socket.error , msg:
+	    print 'Bind failed. Error Code : ' + str(msg[0]) + ' Message ' + msg[1]
+	    sys.exit()
+	     
+	print 'Socket bind complete'
+	 
+	s.listen(10)
+	print 'Socket now listening'
+	 
+	#now keep talking with the client
+	while 1:
+	    #wait to accept a connection - blocking call
+	    conn, addr = s.accept()
+	    print 'Connected with ' + addr[0] + ':' + str(addr[1])
+	     
+	    data = conn.recv(1024)
+	    reply = 'OK...' + data
+	    if not data: 
+	        break
+	     
+	    conn.sendall(reply)
+	 
+	conn.close()
+	s.close()
+	
+	print 'Message send successfully'

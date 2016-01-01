@@ -8,5 +8,8 @@
     <Setting Name="netPort" Type="System.String" Scope="User">
       <Value Profile="(Default)">8090</Value>
     </Setting>
+    <Setting Name="controlPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">9999</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

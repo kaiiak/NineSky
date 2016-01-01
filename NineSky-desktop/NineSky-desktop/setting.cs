@@ -17,6 +17,7 @@ namespace NineSky_desktop
             InitializeComponent();
             netAdress.Text = config.Default.netAdress;
             netPort.Text = config.Default.netPort;
+            controlPort.Text = config.Default.controlPort;
         }
 
         private void setSure_Click(object sender, EventArgs e)

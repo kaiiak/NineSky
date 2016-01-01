@@ -175,9 +175,9 @@
             this.showCpuTem.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.showCpuTem.Location = new System.Drawing.Point(198, 340);
             this.showCpuTem.Name = "showCpuTem";
-            this.showCpuTem.Size = new System.Drawing.Size(55, 21);
+            this.showCpuTem.Size = new System.Drawing.Size(28, 21);
             this.showCpuTem.TabIndex = 12;
-            this.showCpuTem.Text = "label3";
+            this.showCpuTem.Text = "45";
             // 
             // showGpuTem
             // 
@@ -186,9 +186,9 @@
             this.showGpuTem.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.showGpuTem.Location = new System.Drawing.Point(425, 340);
             this.showGpuTem.Name = "showGpuTem";
-            this.showGpuTem.Size = new System.Drawing.Size(55, 21);
+            this.showGpuTem.Size = new System.Drawing.Size(28, 21);
             this.showGpuTem.TabIndex = 13;
-            this.showGpuTem.Text = "label4";
+            this.showGpuTem.Text = "20";
             // 
             // memUse
             // 
